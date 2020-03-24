@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Montserrat:700,400');
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+/*Better Black 282936*/
+/*Better white #f3f8fa*/
+/*background: linear-gradient(35deg, #64B6AC, #3C6B7C 100%);*/
+
+body{
+    background-color:black;
+}
+
+.grid{
+    display: grid;
+    gap:10px;
+    padding:5rem;
+    grid-template-columns: auto;
+}
+
+.grid > div{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+}
+.grid > div >p{
+    color: white;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 5px;
+}
+
+p.font1{
+    font-family: Lato;
+    font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -.45rem;
+    -webkit-text-stroke: 3px white;
+    text-decoration: none;
+}
+
+p.font2{
+    font-family: 'Muli', sans-serif;
+    font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: -.45rem;
+    -webkit-text-stroke: 3px white;
+    text-decoration: none;
+}
+
+p.font3{
+    font-family: Impact, Haettenschweiler;
+    font-weight: 700;
+	line-height: 1.2;
+    -webkit-text-stroke: 4px black;
+    text-decoration: none;
+}
+
+
+
+button{
+    border:0;
+}
+.robus_button{
+    text-align: center;
+    text-decoration: none;
+    height:4rem;
+    width:4rem;
+    background-color:white;
+    border:1px white solid;
+    border-radius: 10px 10px 10px 10px;
+    transition:all 0.5s ease;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler;
+    line-height: 1.2;
+    font-size: 1rem;
+}
+
+.robus_button:hover{
+    background-color:blue;
+    color:white;
+    border:1px blue solid;
+}
+
+.clear_button{
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    color:white;
+    border:1px white solid;
+    border-radius: 5px 5px 5px 5px;
+    transition:all 0.5s ease;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.2;
+    font-size: 1rem;
+}
+
+.clear_button:hover{
+    background-color:white;
+    color:black;
+    border:1px black solid;
+    transition:all 0.5s ease;
+}
+
+/*.BTN BRK IS TAKEN FROM https://codepen.io/yourpalnurav/pen/LqNmzL BY yourpalnurav */
+
+.brk-btn {
+    position: relative;
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 0.2em solid white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    font-family: Impact, Haettenschweiler;
+  }
+  .brk-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background:rgba(0, 0, 0, 1);
+    height: 0.3em;
+    right: 20%;
+    top: -0.21em;
+    transform: skewX(-45deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .brk-btn::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: rgba(0, 0, 0, 1);
+    height: 0.3em;
+    left: 20%;
+    bottom: -0.25em;
+    transform: skewX(45deg);
+    -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  .brk-btn:hover::before {
+    right: 80%;
+  }
+  .brk-btn:hover::after {
+    left: 80%;
+  }
+  
+  .block_button{
+    position: relative !important;
+    width: 2.8rem;
+    transition: 0.2s;
+    transform-origin: 50% 60%;
+    color: black;
+    padding: 0.8em 1.4em;
+    background: #f3f8fa;
+    font-family: Impact, Haettenschweiler;
+    cursor: pointer;
+    min-width: 5rem;    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    /* All the shadows for different types of explorers*/
+    -webkit-box-shadow: 0px 3px 0px rgb(187, 187, 187), 0px 3px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 3px 0px rgb(187, 187, 187), 0px 3px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 3px 0px rgb(187, 187, 187), 0px 3px 25px rgba(0,0,0,.7);
+
+    /* Transitions*/
+
+    -webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+    transition: all .1s ease;
+    
+
+  }
+  
+  .block_button:focus {outline:0;}
+
+  .block_button:active{
+    -webkit-box-shadow: 0px 1px 0px rgb(187, 187, 187), 0px 1px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 1px 0px rgb(187, 187, 187), 0px 1px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 1px 0px rgb(187, 187, 187), 0px 1px 6px rgba(0,0,0,.9);
+
+  }
+
