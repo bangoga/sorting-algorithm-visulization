@@ -44,7 +44,7 @@ function button_click(button_element){
 // esthathic design
 function forced_wait(){
     //- If waitbutton is hidden-> show the wait button
-    wait_show();
+    svg_hide();
 }
 
 
@@ -59,6 +59,17 @@ function canvas_hide()
     wait_show(wait_hide);
 }
 
+
+
+function svg_hide()
+{
+    if(draw_area.classList.contains("show")){
+        draw_area.classList.remove("show");
+        draw_area.classList.remove("visible");
+        draw_area.classList.add("hide");
+    }
+    wait_show(wait_hide);
+}
 
 
 function wait_show(callback)
@@ -80,14 +91,14 @@ function wait_show(callback)
 
 function wait_hide(callback)
 {
-    if(canvas.classList.contains("hide")){
+    if(draw_area.classList.contains("hide")){
         wait_button.classList.remove("visible");
         wait_button.classList.remove("show");
         wait_button.classList.add("hide");
 
 
-        canvas.classList.remove("hide");
-        canvas.classList.add("visible");
+        draw_area.classList.remove("hide");
+        draw_area.classList.add("visible");
     }
     setTimeout(function(){
         callback(selection_sort);
@@ -111,7 +122,11 @@ function canvas_show(callback){
 
 
 function svg_show(){
-
+    draw_area.innerHTML=
+        '<path d="M35.3535 31.6465C35.1583 31.4512 34.8417 31.4512 34.6464 31.6465L31.4645 34.8284C31.2692 35.0237 31.2692 35.3403 31.4645 35.5355C31.6597 35.7308 31.9763 35.7308 32.1716 35.5355L35 32.7071L37.8284 35.5355C38.0237 35.7308 38.3403 35.7308 38.5355 35.5355C38.7308 35.3403 38.7308 35.0237 38.5355 34.8284L35.3535 31.6465ZM35.5 149L35.5 32L34.5 32L34.5 149L35.5 149Z" fill="black"/>'
+        + '<path d="M152.354 149.354C152.549 149.158 152.549 148.842 152.354 148.646L149.172 145.464C148.976 145.269 148.66 145.269 148.464 145.464C148.269 145.66 148.269 145.976 148.464 146.172L151.293 149L148.464 151.828C148.269 152.024 148.269 152.34 148.464 152.536C148.66 152.731 148.976 152.731 149.172 152.536L152.354 149.354ZM35 149.5L152 149.5V148.5L35 148.5V149.5Z" fill="black"/>';
+    
+        draw_area.classList.add("show");
 }
 
 function selection_sort(){
