@@ -18,7 +18,7 @@ body::-webkit-scrollbar-track{
 .grid{
     display: grid;
     gap:10px;
-    padding:2rem 5rem 5rem 5rem;
+    padding:0.25rem 5rem 5rem 5rem;
     margin-left: 6rem;
     grid-template-columns: auto;
     
@@ -35,7 +35,7 @@ body::-webkit-scrollbar-track{
 
 .grid > div:nth-child(1) {
     grid-column: span 5;
-    height:10vh;
+    height:15vh;
     font-family: Impact, Haettenschweiler;
     font-size: 2em;
     letter-spacing: -0.1rem;
@@ -45,6 +45,17 @@ body::-webkit-scrollbar-track{
   .grid > div:nth-child(2) {
     grid-column: span 5;
     height:30vh;
+  }
+
+  .grid > div:nth-child(3) {
+    margin-top:1rem;
+    grid-column: span 5;
+    height:40vh;
+  }
+  .grid > div:nth-child(4) {
+    margin-top:1rem;
+    grid-column: span 5;
+    height:35vh;
   }
 
 
@@ -145,4 +156,47 @@ body::-webkit-scrollbar-track{
   .show{
     opacity: 1;
     visibility: visible;
+  }
+  
+  .canvas-div-hidden{
+
+  }
+
+  #canvas-div{
+    border-radius: 8px;
+    background-color: white;
+    box-shadow:  0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+  }
+
+  #graph-div{
+    border-radius: 8px;
+    background-color: white;
+    box-shadow:  0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+  }
+
+  #draw_area{
+    width:100%;
+    height:80%;
+  }
+
+  #code-div{
+    border-radius: 8px;
+    background-color: white;
+    box-shadow:  0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+    0 4px 4px rgba(0,0,0,0.11), 
+    0 6px 8px rgba(0,0,0,0.11),
+    0 8px 16px rgba(0,0,0,0.11);
+  }
+  .responsive-logo-embed{
+    width:100%;
+    height:100%;
   }
