@@ -198,6 +198,28 @@ function svg_draw(arr)
     }
 }
 
+
+function select_sort(arr){
+    var minimum_index;
+    for(var i = 0;i<arr.length;i++){
+        minimum_index=i;
+        for(var j=i+1;j<arr.length;j++){
+            if(arr[minimum_index]>arr[j]){
+                minimum_index=j;
+            }
+        }   
+
+        //Once index minimum is figured, swap
+
+    }
+}
+
+
+// Recieves two object bars and swaps them visually
+function visual_swap(bar_A,bar_B){
+
+}
+
 // Need to figure out a way to make the array grow with it
 // easiest way it to have a function that grows the grid div and the draw_area
 // Use the object to save the values of x and y with the translations
