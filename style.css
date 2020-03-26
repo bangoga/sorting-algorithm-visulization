@@ -170,7 +170,13 @@ body::-webkit-scrollbar-track{
     0 4px 4px rgba(0,0,0,0.11), 
     0 6px 8px rgba(0,0,0,0.11),
     0 8px 16px rgba(0,0,0,0.11);
+    -webkit-animation: slideDown 3s forwards; /* Safari 4+ */
+    -moz-animation:    slideDown 3s forwards; /* Fx 5+ */
+    -o-animation:      slideDown 3s forwards; /* Opera 12+ */
+    animation:         slideDown 3s forwards; /* IE 10+, Fx 29+ */
   }
+
+
 
   #graph-div{
     border-radius: 8px;
@@ -184,7 +190,7 @@ body::-webkit-scrollbar-track{
 
   #draw_area{
     width:100%;
-    height:80%;
+    height:100%;
   }
 
   #code-div{
@@ -200,3 +206,20 @@ body::-webkit-scrollbar-track{
     width:100%;
     height:100%;
   }
+
+  .svg_bar{
+    cursor: pointer;
+  }
+
+  .svg_bar:hover {
+      fill: red;
+    }
+
+    @keyframes slideDown{
+      from{
+        height: 30vh;
+      }
+      to{
+        height:50vh;
+      }
+    }
