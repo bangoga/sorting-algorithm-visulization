@@ -1,5 +1,5 @@
 # Sorting Algorithm Learning Tool
-A webpage with implementations of sorting algorithm shown visually using svg animated graphs
+A webpage with implementations of sorting algorithm shown visually using svg animated graphs. The goal is to show results of sorting algorithms a long side each marked step of its concuring algorithm, with the final panel showing the runtime of graphed on the given data overlayed by best and worst case runtime. 
 
 ## Getting Started
 
